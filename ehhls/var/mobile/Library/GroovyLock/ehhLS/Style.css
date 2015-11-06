@@ -1,0 +1,106 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+	margin: 0;
+  font-family: ".SFUIDisplay-Light", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+	color: #222;  
+}
+
+body, div, span, i {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.tc {
+  text-align: center;
+}
+
+.cy {
+  transform: translateY(-50%); 
+  top: 50%;
+}
+
+.container {
+  width: 300px;
+  margin: 2em auto 0;
+	position: relative;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.time {
+  position: relative;
+  font-size: 4em;
+  font-family: ".SFUIDisplay-Thin", Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.time span {
+  vertical-align: middle;
+}
+
+#colon {
+  vertical-align: baseline;
+}
+
+#ampm {
+  display: none;
+  margin-left: 3px;
+  font-size: 0.75em;
+}
+
+.date {
+  font-size: 1.25em;
+}
+
+.battery {
+  position: relative;
+  min-height: 16px;
+}
+
+.bbar {
+  height: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: 48px; 
+  background: #CCC;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 60%;
+  background-color: #7cb342;
+}
+
+.binfo {
+  float: right;
+  font-size: 12px;
+}
+
+.binfo span, .binfo i {
+    vertical-align: middle;
+    float: left;
+}

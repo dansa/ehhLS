@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "icons";
+  src:url("fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ic {
+    display: inline-block;
+    font: normal normal normal 14px/1 "icons";
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
+.ic.bolt-solid:before {
+  content: "\e000";
+}
+.ic.bolt-line:before {
+  content: "\e001";
+}
