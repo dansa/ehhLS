@@ -23,8 +23,8 @@ var showBCharge = "true";	// Show/Hide Battery charge icon
 //	-------- BATTERY SETTINGS --------------------------------------------------------
 var batteryInterval = 30; 	// Battery update interval in seconds
 							// Should be same as the update interval set in InfoStats
-var greenPerc = 60;			// Battery level where bar turns green
-var yellowPerc = 20;		// Battery level where bar turns yellow
+var greenPerc = 20;			// Battery level where bar turns green
+var yellowPerc = 10;		// Battery level where bar turns yellow
 var redPerc = 0;			// Battery level where bar turns Red
 var boltStyle = "solid";	// Charge-bolt style, line or solid
 
