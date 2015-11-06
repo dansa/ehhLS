@@ -1,6 +1,6 @@
 Package: com.dansa.ehhls
 Name: ehhLS - Lockscreen Clock
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: A random LS clock I made.
 Depiction: http://dansa.github.io/depictions/info/com.dansa.ehhls/index.html

@@ -48,9 +48,11 @@ function ordinalDate (d) {
 function battery() {
 	if (showBBar) {
 		jQuery.get('file:///private/var/mobile/Library/BatteryStats.txt', function(appdata) {
-			var substr = appdata.split('\n');
-			batPerc = substr[0].split(':')[1];
-			batState = substr[1].split(':')[1];
+			var re = /: ?([\w]+)/g,
+			st = appdata.split(re),
+			mg;
+			batPerc = st[1];
+			batState = st[3];
 
 			if( batPerc >= redPerc  && batPerc < yellowPerc ) { $("#bbar").css("background-color", "#e53935"); }
 			if( batPerc >= yellowPerc  && batPerc < greenPerc ) { $("#bbar").css("background-color", "#ffb300"); }
@@ -60,10 +62,12 @@ function battery() {
 			$("#bperc").html(batPerc + "%");
 			if (showBCharge == "true" && batState == "Charging") {
 				$("#bstate").show();
+				mg = 20;
 			} else {
 				$("#bstate").hide();
+				mg = 4;
 			}
-			$(".bbar").css("margin-right", $(".binfo").outerWidth() + 4);
+			$(".bbar").css("margin-right", $("#bperc").outerWidth() + mg);
 		}).fail(function() {
 	    	$(".battery").hide();
 	    	showBBar = false;
